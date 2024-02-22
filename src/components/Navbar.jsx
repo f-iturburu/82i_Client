@@ -5,7 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from "react-bootstrap/Image";
 import { Button } from "react-bootstrap";
 import { getLs } from "../helpers/getLs";
-
+import Logo from "../assets/logo.png"
 const USER_KEY = import.meta.env.VITE_USER_KEY;
 const ADMIN_KEY = import.meta.env.VITE_ADMIN_KEY;
 
@@ -25,7 +25,7 @@ function Navigation() {
     <Navbar expand="lg" className="bg-body-tertiary w-100">
       <Container className="mx-3 w-100">
         <Navbar.Brand href="/">
-          <Image className="img-fluid w-25" src="/src/assets/logo.png"></Image>
+          <Image className="img-fluid w-25" src={Logo}></Image>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
